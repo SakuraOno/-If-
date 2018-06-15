@@ -10,82 +10,63 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var monstername: UILabel!
     
-    var imagenumber = 0
-    var namenumber = 0
+    var monster: [Monster] = []
+    var number: Int = 0
     
-    let mosterArray = [UIImage(named:"ウーパールーパー.jpg")!,UIImage(named:"ガンダム.jpg")!,UIImage(named:"スフィンクス.jpg")!,]
-    let wordArray = ["ウーパールーパー", "ガンダム","スフィンクス"]
-    
-    //nextを押すと画像と名前を管理いている配列の数が共に１進む
+    //nextを押すと画像と名前を管理している配列の数が共に１進む、２以上になると０に戻る
     @IBAction func next(_ sender: Any) {
-       
-        imagenumber += 1
-        displayimage()
-        
-        namenumber += 1
-        displayname()
+        number += 1
+        if number > 2 {
+            number = 0
+        }
+        monstername.text = monster[number].name
+        imageView.image = monster[number].image
     }
     
-    //backを押すと画像と名前を管理いている配列の数が共に１戻る
+    //backを押すと画像と名前を管理している配列の数が共に１戻る、０以下になると２に進む
     @IBAction func back(_ sender: Any) {
-        
-        imagenumber -= 1
-        displayimage()
-        
-        namenumber -= 1
-        displayname()
+        number -= 1
+        if number < 0 {
+            number = 2
+        }
+        monstername.text = monster[number].name
+        imageView.image = monster[number].image
     }
     
-    //画像について
-    func displayimage(){
-        
-    //０より下がったら２に戻る
-        if imagenumber < 0 {
-            imagenumber = 2
-        }
-    //２を超したら０に戻る
-        if imagenumber > 2 {
-            imagenumber = 0
-        }
-        
-        image.image = mosterArray[imagenumber]
-        
-    }
-    //名前について
-    func displayname(){
-       
-    //０より下がったら２に戻る
-        if namenumber < 0 {
-            namenumber = 2
-        }
-    //２を超したら０に戻る
-        if namenumber > 2 {
-            namenumber = 0
-        }
-        
-        label.text = wordArray[namenumber]
-        
+    func displayImage() {
+        let imageNameArray = ["monster.jpg", "monster1.jpg", "monster2.jpg"]
+        let name = imageNameArray[number]
+        let image = UIImage(named: name)
+        imageView.image = image
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    //最初に表示する画像に関して
-        let monster = UIImage(named:"ウーパールーパー.jpg")
-        image.image = monster
+        //pngとjpgの違いでかなり時間をとった
+        let monster1 = Monster(image: UIImage(named: "monster.jpg")!, name: "ウーパールーパー")
+        let monster2 = Monster(image: UIImage(named: "monster1.jpg")!, name: "ガンダム")
+        let monster3 = Monster(image: UIImage(named: "monster2.jpg")!, name: "スフィンクス")
         
-        let name = "ウーパールーパー"
-        label.text = name
+        monster = [monster1, monster2, monster3]
         
+        //最初に表示する画像について
+        let image = UIImage(named: "monster.jpg")
+        monstername.text = monster1.name
+        imageView.image = image
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //Swiftは別ファイルを作らなくても大丈夫らしい
+    class Monster {
+        var name: String
+        var image: UIImage
+        
+        init(image: UIImage, name: String) {
+            self.name = name
+            self.image = image
+        }
     }
-    
-    
 }

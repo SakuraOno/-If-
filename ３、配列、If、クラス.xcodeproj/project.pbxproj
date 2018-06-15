@@ -12,9 +12,9 @@
 		21E5A3B520C6921600545055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E5A3B320C6921600545055 /* Main.storyboard */; };
 		21E5A3B720C6921F00545055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E5A3B620C6921F00545055 /* Assets.xcassets */; };
 		21E5A3BA20C6921F00545055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E5A3B820C6921F00545055 /* LaunchScreen.storyboard */; };
-		21E5A3C220C6936900545055 /* ウーパールーパー.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21E5A3C120C6936800545055 /* ウーパールーパー.jpg */; };
-		21E5A3C420C6936E00545055 /* ガンダム.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21E5A3C320C6936D00545055 /* ガンダム.jpg */; };
-		21E5A3C620C6937300545055 /* スフィンクス.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21E5A3C520C6937200545055 /* スフィンクス.jpg */; };
+		21E5A3C220C6936900545055 /* monster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21E5A3C120C6936800545055 /* monster.jpg */; };
+		21E5A3C420C6936E00545055 /* monster1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21E5A3C320C6936D00545055 /* monster1.jpg */; };
+		21E5A3C620C6937300545055 /* monster2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21E5A3C520C6937200545055 /* monster2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		21E5A3B620C6921F00545055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21E5A3B920C6921F00545055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21E5A3BB20C6921F00545055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21E5A3C120C6936800545055 /* ウーパールーパー.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ウーパールーパー.jpg"; sourceTree = "<group>"; };
-		21E5A3C320C6936D00545055 /* ガンダム.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ガンダム.jpg"; sourceTree = "<group>"; };
-		21E5A3C520C6937200545055 /* スフィンクス.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "スフィンクス.jpg"; sourceTree = "<group>"; };
+		21E5A3C120C6936800545055 /* monster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monster.jpg; sourceTree = "<group>"; };
+		21E5A3C320C6936D00545055 /* monster1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monster1.jpg; sourceTree = "<group>"; };
+		21E5A3C520C6937200545055 /* monster2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monster2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +63,9 @@
 				21E5A3AF20C6921600545055 /* AppDelegate.swift */,
 				21E5A3B120C6921600545055 /* ViewController.swift */,
 				21E5A3B320C6921600545055 /* Main.storyboard */,
-				21E5A3C120C6936800545055 /* ウーパールーパー.jpg */,
-				21E5A3C320C6936D00545055 /* ガンダム.jpg */,
-				21E5A3C520C6937200545055 /* スフィンクス.jpg */,
+				21E5A3C120C6936800545055 /* monster.jpg */,
+				21E5A3C320C6936D00545055 /* monster1.jpg */,
+				21E5A3C520C6937200545055 /* monster2.jpg */,
 				21E5A3B620C6921F00545055 /* Assets.xcassets */,
 				21E5A3B820C6921F00545055 /* LaunchScreen.storyboard */,
 				21E5A3BB20C6921F00545055 /* Info.plist */,
@@ -131,12 +131,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21E5A3C220C6936900545055 /* ウーパールーパー.jpg in Resources */,
+				21E5A3C220C6936900545055 /* monster.jpg in Resources */,
 				21E5A3BA20C6921F00545055 /* LaunchScreen.storyboard in Resources */,
 				21E5A3B720C6921F00545055 /* Assets.xcassets in Resources */,
-				21E5A3C620C6937300545055 /* スフィンクス.jpg in Resources */,
+				21E5A3C620C6937300545055 /* monster2.jpg in Resources */,
 				21E5A3B520C6921600545055 /* Main.storyboard in Resources */,
-				21E5A3C420C6936E00545055 /* ガンダム.jpg in Resources */,
+				21E5A3C420C6936E00545055 /* monster1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
