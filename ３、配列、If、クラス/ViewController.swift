@@ -59,7 +59,8 @@ class ViewController: UIViewController {
         imageView.image = image
     }
     
-    //Swiftは別ファイルを作らなくても大丈夫らしい
+    //Swiftは別ファイルを作らなくても大丈夫らしい　http://tea-leaves.jp/swift/content/クラス
+    
     class Monster {
         var name: String
         var image: UIImage
